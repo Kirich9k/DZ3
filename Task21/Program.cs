@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.Clear();
+Console.WriteLine("Напишите координату X первой точки");
+double X1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Напишите координату Y первой точки");
+double Y1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Напишите координату Z первой точки");
+double Z1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Напишите координату X второй точки");
+double X2 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Напишите координату Y второй точки");
+double Y2 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Напишите координату Z второй точки");
+double Z2 = Convert.ToDouble(Console.ReadLine());
+double result = Math.Round(Math.Sqrt(Math.Pow(X2 - X1, 2) + Math.Pow(Y2 - Y1, 2) + Math.Pow(Z2 - Z1, 2)), 2);
+Console.WriteLine($"{result}");
